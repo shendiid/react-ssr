@@ -9,7 +9,8 @@
     "start": "nodemon --watch build --exec node \"./build/bundle.js\"",
     "dev": "npm-run-all --parallel dev:**",
     "dev:start": "nodemon --watch build --exec node \"./build/bundle.js\"",
-    "dev:build": "webpack --config webpack.server.js --watch"
+    "dev:build": "webpack --config webpack.server.js --watch",
+    "dev:build1": "webpack --config webpack.client.js --watch"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.40.0",
+    "webpack-merge": "^5.8.0",
     "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {

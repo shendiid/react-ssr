@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
-    return <div>home</div>
-}
+  return (
+    <div
+      onClick={() => {
+        alert("click111");
+      }}
+    >
+      home
+    </div>
+  );
+};
 
 export default Home;
