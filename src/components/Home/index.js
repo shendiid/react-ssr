@@ -1,13 +1,18 @@
 import React from "react";
+import Header from "../Header";
 
 const Home = () => {
   return (
-    <div
-      onClick={() => {
-        alert("click111");
-      }}
-    >
-      home
+    <div>
+      <Header />
+      Home
+      <button
+        onClick={() => {
+          alert("click1");
+        }}
+      >
+        按钮
+      </button>
     </div>
   );
 };
