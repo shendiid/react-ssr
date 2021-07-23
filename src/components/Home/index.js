@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "../Header";
+import { connect } from 'react-redux';
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
       <Header />
+      <div>{props.name}</div>
       Home
       <button
         onClick={() => {
@@ -17,4 +19,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStatetoProps = state => ({
+  name: state.name
+});
+
+export default connect(mapStatetoProps, null)(Home);
